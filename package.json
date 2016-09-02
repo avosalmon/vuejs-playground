@@ -1,0 +1,13 @@
+{
+  "name": "vuejs-playground",
+  "description": "Vue.js playground",
+  "version": "0.1.0",
+  "repository": "https://github.com/avosalmon/vuejs-playground",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "vue": "1.0.26"
+  },
+  "devDependencies": {},
+  "scripts": {}
+}
