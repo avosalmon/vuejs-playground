@@ -4,12 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Vue.js Playground</title>
+    <link rel="stylesheet" type="text/css" href="styles/app.css">
     <script type="text/javascript" src="node_modules/vue/dist/vue.min.js"></script>
 </head>
 <body>
     <div class="container">
+        <h1>Vue.js Playground</h1>
         <div id="app">
-            {{ message }}
+            <input type="text" v-model="input" v-on:keyup.enter="addMessage">
+            <ul>
+                <li v-for="message in messages">
+                    <span>{{ message }}</span>
+                    <button v-on:click="removeMessage($index)">X</button>
+                </li>
+            </ul>
         </div>
     </div>
 

@@ -1,0 +1,35 @@
+// Common styles
+// -------------------------------
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, header, hgroup, section, article, aside, hgroup, footer, figure, figcaption, nav {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    color: #333;
+}
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+
+em {
+    font-style: italic;
+}
+
+img {
+    border: 0 none;
+    vertical-align: bottom;
+}
+
+ul, ol {
+    list-style: none outside none;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
