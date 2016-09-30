@@ -15,7 +15,7 @@
             <div class="payment-box" v-for="payment in payments">
                 <input type="radio" id="{{ payment.type }}" class="payment-radio" name="payment_id" value="{{ payment.id }}" v-model="selected">
                 <label for="{{ payment.type}}" class="payment-label" :class="{ checked: payment.id == selected }">{{ payment.name }}</label>
-                <p class="payment-description" v-show="payment.id == selected">{{{ payment.description }}}</p>
+                <div class="payment-description" :class="{ shown: payment.id == selected }">{{{ payment.description }}}</div>
             </div>
             <p>selected: {{ selected }}</p>
         </div>

@@ -52,3 +52,17 @@ ul, ol {
 .payment-label.checked {
     background-image: url(https://s3-ap-northeast-1.amazonaws.com/kurashicom-images/shop/2016-07-28/274adc27086d6a3ae893de1b404e5e0e.png);
 }
+
+.payment-description {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.payment-description.shown {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.75s ease-in;
+    -moz-transition: max-height 0.75s ease-in;
+    -ms-transition: max-height 0.75s ease-in;
+    -o-transition: max-height 0.75s ease-in;
+    transition: max-height 0.75s ease-in;
+}

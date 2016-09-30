@@ -25,15 +25,11 @@ var payments = [
     }
 ];
 
-var methods = {
-
-};
-
 new Vue({
     el: '#payment',
     data: {
         payments: payments,
         selected: 1
     },
-    methods: methods
+    methods: {}
 });
