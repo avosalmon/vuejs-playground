@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Vue.js Playground</title>
+    <link rel="stylesheet" type="text/css" href="styles/app.css">
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/vue/dist/vue.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Vue.js Playground</h1>
+        <div id="payment">
+            <div class="payment-box" v-for="payment in payments">
+                <input type="radio" id="{{ payment.type }}" name="payment_id" value="{{ payment.id }}" v-model="currentPayment">
+                <label for="{{ payment.type}} ">{{ payment.name }}</label>
+                <p class="payment-description" v-show="payment.id == currentPayment">{{ payment.description }}</p>
+            </div>
+            <p>{{ currentPayment }}</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="scripts/payment.js"></script>
+</body>
+</html>
