@@ -33,7 +33,7 @@ new Vue({
     el: '#payment',
     data: {
         payments: payments,
-        currentPayment: 1
+        selected: 1
     },
     methods: methods
 });
